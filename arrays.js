@@ -52,3 +52,44 @@ grades.toString(); // [10, 8, 13, 15]
 const names = ["Sam", "Alex", "John"];
 console.log(names.join(", ")); // Sam, Alex, John
 
+// every (all satisfy condition)
+const grades3 = [10, 8, 13, 15];
+grades3.every(grade => grade >= 10); // false
+
+// some (at least one satisfies condition)
+grades3.some(grade => grade >= 12); // true
+
+// clearing out array
+grades3.length = 0; // removes all elements
+grades3.length; // 0
+
+// splice
+grades3.splice(1, 1); // removes the second element
+grades3; // [10, 8, 15]
+
+grades3.splice(1); // removes all elements after index 1
+
+grades3.splice(1, 0, 100); // adds 100 at index 1
+grades3; // [10, 100, 8, 15]
+
+// reduce
+const scores = [1, 2, 3, 4];
+const sum = scores.reduce((total, curr) => total + curr); // returns 10
+const multiplied =
+    scores.reduce((total, curr) => {
+        return total * curr
+    }, 1); // returns 24
+// multiplied has to have initial value of 1, the second parameter for reduce()
+
+// array destructuring - syntatic sugar
+const dimensions = [20, 5];
+const [width, height] = dimensions;
+// react uses this with useState() ex:
+// const [counter, setCounter] = useState(0);
+
+// array concatenation
+const lat = [5.234];
+const lng = [1.412];
+const point = [...lat, ...lng]; // ... is spread syntax
+console.log(point); // [5.234, 1.412];
+
