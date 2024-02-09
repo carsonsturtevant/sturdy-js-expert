@@ -31,3 +31,12 @@ heading.parentElement; // <section>
 // element.closest
 const btn = document.querySelector(".btn");
 btn.closest(".section"); // <section>
+
+// interfaces
+// every html element inherits a particular interface
+const div = document.querySelector("div");
+const p = document.querySelector("p");
+
+div.toString(); // [object HTMLDivElement]
+p.toString(); // [object HTMLParagraphElement]
+// every html element inherits from HTMLElement
