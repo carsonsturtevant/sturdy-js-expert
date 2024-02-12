@@ -1,5 +1,15 @@
 {
   "dependencies": {
     "learnjavascript-online-npm": "^1.2.0"
-  }
+  },
+  "name": "sturdy-js-expert",
+  "version": "1.0.0",
+  "description": "study js",
+  "main": "arrays.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
